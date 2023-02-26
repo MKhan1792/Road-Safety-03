@@ -32,6 +32,7 @@ function updateDetails(temp,locationName,time,condition){
 
     document.write(temp)
     document.getElementById("demo").value = temp;
+    temeratureField.innerHTML = temp
     locationFild.innerHTML = locationName
     dataandtimeField.innerHTML = `${splitDate} ${currentDay} ${splitTime}`
     conditionFild.innerHTML = condition
