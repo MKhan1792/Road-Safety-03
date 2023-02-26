@@ -10,7 +10,7 @@
       <div class="my-2 flex sm:flex-row flex-col">
         <div class="flex flex-row mb-1 sm:mb-0">
           <div class="relative">
-            <select class="appearance-none h-full rounded-l border block appearance-none w-full bg-white border-gray-400 text-gray-700 py-2 px-4 pr-8 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <select class="appearance-none h-full rounded-l border block w-full bg-white border-gray-400 text-gray-700 py-2 px-4 pr-8 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
               <option>5</option>
               <option>10</option>
               <option>20</option>
@@ -22,7 +22,7 @@
             </div>
           </div>
           <div class="relative">
-            <select class="appearance-none h-full rounded-r border-t sm:rounded-r-none sm:border-r-0 border-r border-b block appearance-none w-full bg-white border-gray-400 text-gray-700 py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-l focus:border-r focus:bg-white focus:border-gray-500">
+            <select class="h-full rounded-r border-t sm:rounded-r-none sm:border-r-0 border-r border-b block appearance-none w-full bg-white border-gray-400 text-gray-700 py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-l focus:border-r focus:bg-white focus:border-gray-500">
               <option>All</option>
               <option>Active</option>
               <option>Inactive</option>
@@ -45,55 +45,55 @@
         </div>
       </div>
       <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
-        <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
+        <div class="inline-block min-w-full shadow rounded-lg">
           <table class="min-w-full leading-normal">
             <thead>
               <tr>
                 <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
+                  State Name
+                </th>
+                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
                   Year
                 </th>
                 <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
-                  No of Accidents
+                  Vehicals
                 </th>
                 <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
-                  No of Deaths
+                  Male Driver Death
                 </th>
                 <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
-                  No of Ingerd
+                  Female Driver Death
                 </th>
                 <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
-                  No of Ingerd
+                  Transgender Driver Death
                 </th>
                 <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
-                  No of Ingerd
+                  Driver Death Total
                 </th>
                 <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
-                  No of Ingerd
+                  Male Death
                 </th>
                 <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
-                  No of Ingerd
+                  Female Death
                 </th>
                 <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
-                  No of Ingerd
+                  Transgender Death
                 </th>
                 <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
-                  No of Ingerd
-                </th>
-                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-extrabold text-lg text-gray-600 uppercase tracking-wider">
-                  No of Ingerd
+                  Total Death
                 </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="w-full">
                 @foreach (DataRow dr in Model.Rows)
                 {
-                <td scope='row' class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <tr>
+                <td scope='row' class="px-5 py-5 border-b border-gray-200 bg-white text-sm w-20">
                   <span class="relative inline-block px-3 py-1 font-semibold text-blue-900 leading-tight">
                     <span aria-hidden class="absolute inset-0 bg-blue-200 opacity-50 rounded-full"></span>
                     <span class="relative">@dr["States_UTs"]</span>
                   </span>
                 </td>
-              <tr>
                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                   <div class="flex items-center">
                     <div class="ml-3">
