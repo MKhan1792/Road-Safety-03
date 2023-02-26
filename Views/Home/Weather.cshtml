@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="weather_container">
+        <div class="temp">
+            <p id="demo"></p>
+        </div>
+        <div class="time_location">
+            <p></p>
+            <span></span>
+        </div>
+        <div class="condition">
+            <p></p>
+            <p>Mist</p>
+        </div>
+    </div>
+</div>
+<nav>
+    <form>
+        <input type="text" placeholder="Search for location" id="Search_v" class="search_area">
+        <button type="submit" onclick="searchForLocation()">Search</button>
+    </form>
+</nav>
+
+@section Scripts
+{
+    <script src="~/js/Weather.js" asp-append-version="true"></script>
+}
+

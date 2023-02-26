@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="~/css/AccidentDetail.css" asp-append-version="true" />
+
+<div class="main-container">
+  <div class="heading">
+    <h1 class="heading__title">Accident Details</h1>
+    <p class="heading__credits"><a class="heading__link" target="_blank" href="https://dribbble.com/sl">Causes of Accident</a></p>
+  </div>
+  <div class="cards">
+    <div class="card card-1">
+      <div class="card__icon"><i class="fas fa-bolt"></i></div>
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title">No. of Casualities</h2>
+      <p class="card__apply">
+        <a class="card__link" asp-controller="NoOfCasualities" asp-action="NoOfCasualities"> See Data  <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+    <div class="card card-2">
+      <div class="card__icon"><i class="fas fa-bolt"></i></div>
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title">Caused due to Vehicles</h2>
+      <p class="card__apply">
+        <a class="card__link" asp-controller="CauseDueToVehicles" asp-action="CauseDueToVehicles"> See Data  <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+    <div class="card card-3">
+      <div class="card__icon"><i class="fas fa-bolt"></i></div>
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title">Accident Prone Area</h2>
+      <p class="card__apply">
+         <a class="card__link" asp-controller="AccidentProneArea" asp-action="AccidentProneArea"> See Data  <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+    <div class="card card-4">
+      <div class="card__icon"><i class="fas fa-bolt"></i></div>
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title">Death by Accident</h2>
+      <p class="card__apply">
+        <a class="card__link" href="#"> See Data  <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="~/css/output.css" />
+
+<header>
+    <nav class="bg-gray-700">
+      <div class="container mx-auto py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">Code Warriors</h1>
+        <div class="flex space-x-10">
+
+          <div class="flex items-center space-x-2">
+            <a asp-controller="Home" asp-action="TrafficSigns">
+            <span class="text-gray-50">Traffic Signs</span>
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <a asp-controller="Home" asp-action="RoadSafety">
+            <span class="text-gray-50">Road Safety</span>
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <a asp-controller="Home" asp-action="AccidentDetail">
+            <span class="text-gray-50">Accident Detail</span>
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <a asp-controller='Home' asp-action='About'>
+            <span class="text-gray-50">About</span>
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <a asp-controller='Home' asp-action='Login'>
+            <span class="text-gray-50">Login Page</span>
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <a asp-controller='Home' asp-action='Contact'>
+            <span class="text-gray-50">Contact</span>
+            </a>
+          </div>
+
+        </div>
+        <div class="lg:flex hidden items-center space-x-2 bg-white py-1 px-2 rounded-full">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </span>
+          <input class="outline-none" type="text" placeholder="Search" />
+        </div>
+      </div>
+    </nav>
+  </header>
